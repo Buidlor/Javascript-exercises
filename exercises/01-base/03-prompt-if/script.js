@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+    var cake = prompt('you want some cake');
+    cake === "yes" ? alert('congrats') : alert('dont refuse cake')
+    
 })();

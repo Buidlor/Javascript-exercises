@@ -11,4 +11,10 @@
 
 (() => {
     // your code here
+    do{
+        var name = prompt('your name')
+        var age = prompt('your age')
+        var gender = prompt('your gender') 
+    }
+    while(confirm(`your name, age and gender is ${name}, ${age} and ${gender}`)===false)
 })();
