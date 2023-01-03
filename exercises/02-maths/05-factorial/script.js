@@ -13,6 +13,13 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
+
         // your code here
+       let n = parseInt(document.getElementById("number").value)
+       let facto =1
+       for(i=1;i<=n; i++){
+        facto*=i
+       }
+       alert("la factorielle pour " + n + " = " + facto)
     });
 })();

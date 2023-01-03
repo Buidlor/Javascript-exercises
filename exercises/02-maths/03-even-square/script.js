@@ -12,5 +12,10 @@
 (() => {
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        
+        for(i=2; i<=20 ; i+=2){
+            alert(`the result of ${i} * ${i} = ${i*i}`)
+        }
+
     });
 })();

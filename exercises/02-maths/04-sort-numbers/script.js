@@ -14,5 +14,8 @@
 
     document.getElementById("run").addEventListener("click", () => {
         // your code here
+        let array = document.getElementById("numbers").value.split(', ')
+        console.log(array.sort((a,b) => a-b))
+        alert(array.sort((a,b) => a-b))
     });
 })();

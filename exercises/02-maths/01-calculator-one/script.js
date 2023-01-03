@@ -11,20 +11,35 @@
 
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
+    // let one = document.getElementById('op-one').value
+    // let two = document.getElementById('op-two').value
+    
 
     document.getElementById("addition").addEventListener("click", () => {
         // perform an addition
+         var one = document.getElementById('op-one').value
+         var two = document.getElementById('op-two').value
+        alert(`the result is ${parseInt(one)+parseInt(two)}`)
     });
 
     document.getElementById("substraction").addEventListener("click", () => {
         // perform an substraction
+        var one = document.getElementById('op-one').value
+        var two = document.getElementById('op-two').value
+        alert(`the result is ${one-two}`)
     });
 
     document.getElementById("multiplication").addEventListener("click", () => {
         // perform an multiplication
+        var one = document.getElementById('op-one').value
+        var two = document.getElementById('op-two').value
+        alert(`the result is ${one*two}`)
     });
 
     document.getElementById("division").addEventListener("click", () => {
         // perform an division
+        var one = document.getElementById('op-one').value
+        var two = document.getElementById('op-two').value
+        alert(`the result is ${one/two}`)
     });
 })();

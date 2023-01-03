@@ -12,5 +12,17 @@
 (()=> {
 
     // your code here
+    for(i=1; i<=100; i++){
+        if( i%3 === 0 &&  i%5 === 0){
+          console.log(`${i} is FISSBUZZ`)  
+        }
+        else if(i%3 === 0){
+            console.log(`${i} is FISS`)
+        }
+        else if(i%5 === 0){
+            console.log(`${i} is BUZZ`)
+        }
+        else console.log(`${i} nothing`)
+    }
 
 })();
