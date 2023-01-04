@@ -43,8 +43,8 @@
         let randomBird = birds[Math.floor(Math.random()*12)]
         let arrAdj = [...adjectives]
         
-        console.log(randomBird.name, arrAdj[Math.floor(Math.random()*11)])
-        document.getElementById("target").innerHTML = `${randomBird.name} ${arrAdj[Math.floor(Math.random()*11)]}`
+        console.log(randomBird.fem)
+        document.getElementById("target").innerHTML = `${randomBird.name}  ${randomBird.fem ? arrAdj[Math.floor(Math.random()*11)] + 'e': arrAdj[Math.floor(Math.random()*11)]}`
 
     })
 
