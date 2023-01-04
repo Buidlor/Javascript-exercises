@@ -79,7 +79,7 @@
         {
             firstname: "Lief",
             lastname: "Blazy",
-            age: 80,
+            age: 86,
         },
         {
             firstname: "Jo-ann",
@@ -89,4 +89,7 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", ()=> {
+        console.log(people.reduce((total, ele) => total+ele.age,0))
+    })
 })();

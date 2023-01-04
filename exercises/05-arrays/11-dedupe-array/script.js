@@ -28,4 +28,8 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(fruits)
+        console.log([...new Set(fruits)])
+    })
 })();

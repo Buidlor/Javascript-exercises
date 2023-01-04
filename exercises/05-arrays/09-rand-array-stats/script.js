@@ -11,4 +11,20 @@
 
 (() => {
     // your code here
+   
+    
+    document.getElementById("run").addEventListener("click", ()=>{
+        let array=[]
+        for(i=1; i<=10; i++){
+            let ele = Math.floor(Math.random()*100)
+            array.push(ele)
+            document.getElementById(`n-${i}`).innerHTML = ele
+        }
+        console.log(Math.min(array))
+        document.getElementById("min").innerHTML= Math.min(...array)
+        document.getElementById("max").innerHTML= Math.max(...array)
+        document.getElementById("sum").innerHTML= array.reduce((a,b) => a+b)
+        document.getElementById("average").innerHTML= array.reduce((a,b) => a+b)/array.length
+        
+    })
 })();

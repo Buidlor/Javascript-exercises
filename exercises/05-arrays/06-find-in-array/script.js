@@ -89,4 +89,7 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", ()=>{
+        people.filter((ele, i) =>  ele.firstname === "Jean" && ele.lastname === "Dupont" ? console.log(ele.email, i) : 0 )
+    })
 })();

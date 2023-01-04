@@ -89,4 +89,7 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        console.log(people.filter(ele => ele.age > 18))
+    })
 })();
