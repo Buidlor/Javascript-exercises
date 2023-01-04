@@ -19,4 +19,9 @@
         status: "married",
     };
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        for(const prop in person ){
+            console.log(`${prop} : ${person[prop]}`)
+        }
+    })
 })();
