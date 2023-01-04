@@ -11,4 +11,24 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let spookyDays = []
+        let year = document.getElementById("year").value
+        const d = new Date()
+        d.setFullYear(year)
+        for(month=0; month<=11 ; month++){
+            d.setMonth(month)
+            for(day=1; day <=31; day++){
+                d.setDate(day)
+                if(d.getDay() === 4 && d.getDate() ===31){
+                    spookyDays.push(d)
+                }
+            }
+        }
+    
+        console.log(d.getFullYear())
+        alert(spookyDays)
+    
+
+    })
 })();
