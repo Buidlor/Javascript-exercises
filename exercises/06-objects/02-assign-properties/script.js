@@ -26,5 +26,15 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    
+    document.getElementById('run').addEventListener('click',() => {
+        for(i=0 ; i < computers.length; i++){
+            for (const key of Object.keys(defaultProps)) {
+                if (!(key in computers[i])) { 
+                    computers[i][key] = defaultProps[key];
+                }
+            } 
+        }
+        console.log(computers)
+    })
 })();
