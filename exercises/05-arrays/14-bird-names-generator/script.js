@@ -39,4 +39,13 @@
     ]);
 
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let randomBird = birds[Math.floor(Math.random()*12)]
+        let arrAdj = [...adjectives]
+        
+        console.log(randomBird.name, arrAdj[Math.floor(Math.random()*11)])
+        document.getElementById("target").innerHTML = `${randomBird.name} ${arrAdj[Math.floor(Math.random()*11)]}`
+
+    })
+
 })();

@@ -21,6 +21,9 @@
         "Simon",
         "Lucas",
     ]);
-
+    document.getElementById("run").addEventListener("click", () =>{
+        console.log([...people].length)
+        console.log(people.has("Alexandre"))
+    })
     // your code here
 })();
