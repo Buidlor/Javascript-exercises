@@ -11,4 +11,13 @@
 
 (() => {
     // your code here
+    
+    const image = document.getElementsByTagName("img")[0]
+    const target = document.getElementsByTagName("figure")[0]
+    image.addEventListener("mouseover", () => {
+       
+        target.innerHTML =`<img src = ${image.getAttribute("data-hover")}></img>`
+
+    })
+
 })();
