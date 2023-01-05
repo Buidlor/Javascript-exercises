@@ -13,4 +13,10 @@
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     // your code here
+    
+    document.getElementById("run").addEventListener("click", () => {
+        const array= []
+        keys.forEach((ele,i) => array.push([ele, values[i]]))
+        console.log(Object.fromEntries(array))
+    })
 })();
