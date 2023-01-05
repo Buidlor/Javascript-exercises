@@ -17,6 +17,13 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
-
+    
     // your code here
+    let i = 0;
+    const target = document.getElementsByTagName("figure")[0]
+
+    document.getElementById("next").addEventListener("click", () => {
+        i< 4 ? i++ : i=0
+        target.innerHTML = `<img src=${gallery[i]} alt="Carousel" />`
+    })
 })();
