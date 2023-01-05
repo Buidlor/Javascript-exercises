@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+
+    const input = document.getElementById('pass-one')
+    input.maxLength = 16
+    console.log(input.value.length)
+    document.getElementById('pass-one').addEventListener("input", () => {
+        const validity = document.getElementById('validity')
+        let matches = input.value.match(/\d+/g)
+        matches = matches != null && matches.join('')
+        console.log(matches)
+        input.value.length >= 8  && matches != null && matches.length >=2 ?  validity.innerHTML ="OK":0
+        
+    })
 })();
