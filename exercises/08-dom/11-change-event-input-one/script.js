@@ -11,4 +11,17 @@
 
 (() => {
     // your code here
+    const input = document.getElementById('pass-one')
+    input.maxLength = 10
+    console.log(input.value.length)
+    document.getElementById('pass-one').addEventListener("input", () => {
+        const counter = document.getElementById('counter')
+        counter.innerHTML = `${input.value.length}/10` 
+        
+    })
+    
+    
+    
+
+    
 })();
