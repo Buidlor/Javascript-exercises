@@ -11,4 +11,24 @@
 
 (() => {
     // your code here
+    const target = document.getElementById("target")
+    
+
+    let row =''
+    
+    for(i=1; i<=10; i++){
+        let muliplicator = []
+        for (j=1; j<=10;  j++){
+            muliplicator.push(i*j)
+        }
+        row += `
+        <tr>
+            <td>   Multiplication Table ${i}:  </td>
+            <td>  ${muliplicator.join(' ')} </td>
+        </tr>`
+
+    }
+
+
+    target.innerHTML= `<table>${row}</table>`
 })();
