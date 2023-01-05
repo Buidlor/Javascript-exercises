@@ -17,4 +17,8 @@
         }
     }
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+   
+        console.log(new Cat("Skitty", 9), new Cat("Pixel", 6))
+    })
 })();
