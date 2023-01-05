@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+       document.getElementById("run").addEventListener("click", () => {
+        const password = document.getElementById('pass-one')
+        const confirm = document.getElementById('pass-two')
+     
+        
+        const isCorrect = password.value === confirm.value
+        !isCorrect ? password.classList.add('error'): 0
+        !isCorrect ? confirm.classList.add('error'): 0
+    })
 })();

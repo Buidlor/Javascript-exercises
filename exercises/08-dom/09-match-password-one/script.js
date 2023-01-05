@@ -14,7 +14,8 @@
     document.getElementById("run").addEventListener("click", () => {
         const password = document.getElementById('pass-one')
         const confirm = document.getElementById('pass-two')
-     
+        const isCorrect = password.value === confirm.value
+        
         isCorrect ? password.style.borderColor = "green": password.style.borderColor ="red"
         isCorrect ? confirm.style.borderColor = "green": confirm.style.borderColor ="red"
     })
