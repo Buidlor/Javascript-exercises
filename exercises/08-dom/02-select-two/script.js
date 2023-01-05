@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+    // const target = document.getElementsByClassName("target")
+    // target[0].innerHTML = "owned"
+    document.getElementsByClassName("target")[0].innerHTML ="owneded"
 })();

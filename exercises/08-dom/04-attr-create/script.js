@@ -11,4 +11,7 @@
 
 (() => {
     // your code here
+    const source = document.getElementById("source")
+    document.getElementById("target").innerHTML =`<img src=${source.getAttribute("data-image")}></img>`
+    source.remove()
 })();

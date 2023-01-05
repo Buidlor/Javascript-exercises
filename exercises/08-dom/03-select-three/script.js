@@ -11,4 +11,8 @@
 
 (() => {
     // your code here
+    const targets=document.getElementsByClassName("target")
+    for ( i =0; i<targets.length; i++){
+        targets[i].innerHTML = "owned"
+    }
 })();
