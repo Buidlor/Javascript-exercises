@@ -11,4 +11,14 @@
 
 (() => {
     // your code here
+    const target = document.getElementById("target")
+    let rows = ''
+    for(i=0; i<9; i++){
+        rows +='<tr><td> OK </td></tr>'
+    }
+
+    target.innerHTML =
+        `<table>
+            ${rows}
+        </table>`
 })();
