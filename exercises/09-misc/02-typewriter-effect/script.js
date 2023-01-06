@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    const element = document.getElementById("target");
+    const text = element.innerHTML
+    element.innerHTML =""
+    let i = 0;
+    console.log(text)
+    type =() => {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+          }
+    }
+   type();
+
 })();
