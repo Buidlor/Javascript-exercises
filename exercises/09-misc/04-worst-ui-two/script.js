@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+    const button = [document.getElementById("part-one"), 
+        document.getElementById("part-two"), 
+        document.getElementById("part-three"),
+        document.getElementById("part-four")
+    ]
+    const target = document.getElementById("target")
+    
+
+    button.map((ele,i) => ele.addEventListener("click", () => {
+        increment(i)
+        target.innerHTML = button.map( ele => ele.innerHTML).join('')
+    } ))
+
+    
+
+    const increment =(x) => {
+        let min = Number(button[x].getAttribute("data-min"))
+        let max = Number(button[x].getAttribute("data-max"))
+        min<max ? min++ : 0
+        console.log("pressed button", x)
+        button[x].innerHTML= min < 10 ? "0"+min: min
+        button[x].setAttribute("data-min", min)
+        
+    }
+
 })();
