@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const target= document.getElementById("target")
+    target.style.textDecoration = "underline";
+    target.style.textDecorationStyle = "wave";
+    target.style.textDecorationColor = "red";
+    target.style.textDecorationThickness = "0.2em";
+    
 })();
