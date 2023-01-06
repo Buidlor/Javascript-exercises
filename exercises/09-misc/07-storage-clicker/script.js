@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+    const target = document.getElementById('target')
+    const button = document.getElementById('increment')
+    
+    
+    target.innerHTML = localStorage.getItem("score")
+    let value = Number(localStorage.getItem("score"))
+    button.addEventListener("click", () => {
+        value = value +1
+        localStorage.setItem("score",value)
+        target.innerHTML = localStorage.getItem("score")
+    })
+    
 })();
