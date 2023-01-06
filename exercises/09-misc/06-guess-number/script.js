@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    
+        const random = Math.floor(Math.random()*100+1)
+        console.log(random)
+        do{
+            var answer = prompt('give the number')
+            if (Number(answer) > random){
+                alert("too big")
+            } else if(Number(answer) < random){
+                alert("too low")
+            }
+            
+        }
+        while(answer != random && answer !== null)
+    
 })();
