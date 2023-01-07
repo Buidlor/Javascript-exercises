@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        window.lib.getComments(0, (error, comments )=> {
+            error ? console.log(error) :
+            console.log("comments: ", comments)
+        })
+        window.lib.getPosts((error, posts) => {
+            error ? console.log(error) :
+            console.log("posts: ", posts)
+        })
+
+
+    })
+    
 })();
