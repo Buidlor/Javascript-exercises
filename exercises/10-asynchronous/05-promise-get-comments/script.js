@@ -11,4 +11,8 @@
 
 (() => {
     // your code here
+    document.getElementById('run').addEventListener('click', () => {
+        window.lib.getPosts().then(result => console.log("posts", result))
+        window.lib.getComments().then(result => console.log("comments", result))
+    })
 })();
