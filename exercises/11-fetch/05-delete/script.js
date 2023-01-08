@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').addEventListener('click',() => {
+        const id = Number(document.getElementById("hero-id").value) 
+
+        fetch(`http://localhost:3000/heroes/${id}`, {
+        method: 'DELETE',
+        });
+    })
 })();

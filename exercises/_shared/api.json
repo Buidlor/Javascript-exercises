@@ -10,16 +10,6 @@
       ]
     },
     {
-      "id": 2,
-      "name": "Marvel Girl",
-      "alterEgo": "Jean Grey",
-      "abilities": [
-        "Telekinesis",
-        "Telepathy",
-        "Astral projection"
-      ]
-    },
-    {
       "id": 3,
       "name": "Beast",
       "alterEgo": "Hank McCoy",
@@ -36,15 +26,6 @@
         "Flight via feathered wings and hollow bones",
         "Aerial adaptation",
         "Enhanced physical prowess"
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Iceman",
-      "alterEgo": "Bobby Drake",
-      "abilities": [
-        "Cold and ice manipulation",
-        "Ability to assume an enhanced physical form made of solid ice"
       ]
     },
     {
