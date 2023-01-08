@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+
+    const persons = async () => {
+        try{
+            console.log(await window.lib.getPersons())
+        }
+        catch(error){
+           console.log("i perform an error operation",error)
+        }
+    }
+    document.getElementById('run').addEventListener('click', async () => {
+        persons()
+    })
 })();
