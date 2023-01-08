@@ -13,13 +13,9 @@
     // your code here
     document.getElementById('run').addEventListener('click', () => {
         async function getPosts() {
-            try{
 
-                console.log(await window.lib.getPosts() )
-            }
-            catch(error) {
-                console.log(error)
-            }
+            console.log(await window.lib.getPosts() )
+          
         }
         getPosts()
     })

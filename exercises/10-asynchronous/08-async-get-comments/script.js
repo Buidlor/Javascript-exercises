@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+ 
+
+    document.getElementById('run').addEventListener('click',async () => {
+        const posts = await window.lib.getPosts()
+        const comments = await window.lib.getComments(1)
+        
+        console.log("click return", posts)
+        console.log("click return", comments)
+        
+        const newArray = posts.map(ele => ele.comment = comments)
+        console.log("the new array is", newArray)
+
+
+    })
 })();
